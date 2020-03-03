@@ -1,0 +1,52 @@
+.contentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  padding: 25px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .parallaxText {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+
+    backdrop-filter: blur(10px);
+  }
+}
+
+.gap {
+  height: 20px;
+
+  .gapInner {
+    position: relative;
+    bottom: 10px;
+
+    height: 40px;
+
+    backdrop-filter: blur(5px);
+  }
+}
+
+.parallaxJS {
+  background-image: url('../../assets/images/alphabet-letter-js-j-s-logo.jpg');
+  background-position: center -200px;
+}
+
+.parallaxContent {
+  background-image: url('../../assets/images/form-background-js.jpg');
+}
