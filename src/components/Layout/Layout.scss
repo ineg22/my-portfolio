@@ -60,7 +60,6 @@
 
 .main {
   flex-grow: 1;
-  // height: 150vh;
 }
 
 .footer {
@@ -72,7 +71,7 @@
 
   background-color: rgb(26, 25, 25);
 
-  .footerText {
-    color: white;
+  .footerLink {
+    margin: 0 10px;
   }
 }

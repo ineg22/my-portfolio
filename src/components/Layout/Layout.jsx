@@ -1,5 +1,8 @@
 import React from 'react';
 import { Switch, Route, Link, NavLink } from 'react-router-dom';
+import { TiSocialSkypeOutline } from 'react-icons/ti';
+import { FaTelegram, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { GiMailbox } from 'react-icons/gi';
 
 import './Layout.scss';
 
@@ -36,10 +39,30 @@ const Layout = () => (
       </Switch>
     </main>
     <footer className="footer">
-      © Evgeny Ivanov 2020 | &nbsp;
-      <Link to="/about">
-        <span className="footerText">Contact me</span>
-      </Link>
+      © Evgeny Ivanov 2020 | Contact me: &nbsp;
+      <a href="mailto:ineg22@gmail.com" target="_blank" className="footerLink">
+        <GiMailbox color="white" />
+      </a>
+      <a href="https://t.me/ineg_xd" target="_blank" className="footerLink">
+        <FaTelegram color="white" />
+      </a>
+      <a href="skype:ineg_xd" target="_blank" className="footerLink">
+        <TiSocialSkypeOutline color="white" />
+      </a>
+      <a
+        href="https://github.com/ineg22"
+        target="_blank"
+        className="footerLink"
+      >
+        <FaGithub color="white" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/ineg22/"
+        target="_blank"
+        className="footerLink"
+      >
+        <FaLinkedin color="white" />
+      </a>
     </footer>
   </div>
 );

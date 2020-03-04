@@ -1,4 +1,43 @@
-.contentContainer {
+.aboutContainer {
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 10px auto 0;
+
+  .aboutHeader {
+    margin: 15px;
+
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .aboutText {
+    margin: 50px;
+  }
+}
+
+.contactsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-self: flex-end;
+  width: 100%;
+
+  .contactsBlock {
+    margin: 20px;
+
+    .contactsLink {
+      font-size: 0.9rem;
+      font-family: 'Chakra Petch', sans-serif;
+      text-align: center;
+      color: darkblue;
+      text-decoration: none;
+
+      &:hover {
+        color: #2d79f5;
+      }
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
 }
