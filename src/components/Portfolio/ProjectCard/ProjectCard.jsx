@@ -1,24 +1,21 @@
 import React from 'react';
-import './ProjectCard.scss';
-import { WiDayLightning } from 'react-icons/wi';
 import Modal from 'react-modal';
 
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-  },
-};
-
-// Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
+import ProjectIcon from './ProjectIcon';
+import ProjectImage from './ProjectImage';
+import './ProjectCard.scss';
 Modal.setAppElement('#root');
 
-const ProjectCard = () => {
+const ProjectCard = ({ description }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
+  const {
+    name,
+    sourceUrl,
+    taskUrl,
+    hostingUrl,
+    features,
+    shortDescription,
+  } = description;
 
   const openModal = () => {
     setIsOpen(true);
@@ -28,29 +25,61 @@ const ProjectCard = () => {
     setIsOpen(false);
   };
 
+  const featureList = features.map(feature => (
+    <li className="projectFeature">{feature}</li>
+  ));
+
   return (
-    <div className="projectCard">
-      <button onClick={openModal}>
-        <WiDayLightning className="icon" color="white" id="projectCardIcon" />
+    <>
+      <button onClick={openModal} className="projectCard">
+        {name.toUpperCase()}
+        <ProjectIcon type={name} />
       </button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Example Modal"
-        shouldCloseOnOverlayClick={true}
+        contentLabel={`${name} Modal`}
+        shouldCloseOnOverlayClick
+        shouldCloseOnEsc
+        shouldFocusAfterRender
       >
-        <button onClick={closeModal}>close</button>
-        <div>I am a modal</div>
-        <form>
-          <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
-        </form>
+        <button className="closeButton" onClick={closeModal}>
+          🗙
+        </button>
+        <div className="projectDescription">
+          <h2 className="projectName">{name}</h2>
+          <hr />
+          <p className="projectHostingUrl">
+            <a href={hostingUrl} target="_blank">
+              <span className="linkText">{hostingUrl}</span>
+            </a>
+          </p>
+          <hr />
+          <p className="projectShortDescription">{shortDescription}</p>
+          <ul className="projectFeatureList">
+            Used technologies: {featureList}
+          </ul>
+          <hr />
+          <p className="projectSourceUrl">
+            <a href={sourceUrl} target="_blank">
+              <span className="linkText">source code</span>
+            </a>
+          </p>
+          <hr />
+          <p className="projectTaskUrl">
+            <a href={taskUrl} target="_blank">
+              <span className="linkText">specification</span>
+            </a>
+          </p>
+          <hr />
+        </div>
+        <div className="imgContainer">
+          <a href={hostingUrl}>
+            <ProjectImage type={name} />
+          </a>
+        </div>
       </Modal>
-    </div>
+    </>
   );
 };
 

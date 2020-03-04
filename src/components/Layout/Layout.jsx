@@ -9,6 +9,7 @@ import About from '../About/About';
 const Layout = () => (
   <div className="container">
     <header className="header">
+      <div className="headerGap"></div>
       <nav className="nav">
         <ul className="navList">
           <li className="navItem">

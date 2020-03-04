@@ -9,9 +9,19 @@
   top: 0;
   z-index: 10;
 
-  padding: 6px 0;
+  padding: 15px 0;
 
   background-color: white;
+
+  .headerGap {
+    position: absolute;
+    bottom: -10px;
+
+    width: 100%;
+    height: 20px;
+
+    backdrop-filter: blur(5px);
+  }
 
   .nav {
     width: fit-content;
@@ -27,27 +37,21 @@
           margin: 0 5px;
           padding: 0 5px;
 
-          font-size: 0.9rem;
-          color: #1890ff;
+          font-size: 1.5rem;
+          color: #4d90fe;
           text-transform: uppercase;
 
           border-bottom: 1px solid transparent;
 
           &:hover {
-            border-bottom: 1px solid #1890ff;
+            border-bottom: 1px solid #4d90fe;
           }
         }
       }
 
       .selected {
         .navItemText {
-          color: #043bd3;
-
-          border-bottom: 1px solid #043bd3;
-
-          &:hover {
-            border-bottom: 1px solid #043bd3;
-          }
+          border-bottom: 1px solid #4d90fe;
         }
       }
     }

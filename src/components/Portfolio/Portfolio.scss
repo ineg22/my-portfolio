@@ -4,6 +4,8 @@
   justify-content: space-evenly;
   max-width: 1024px;
   margin: 0 auto;
+
+  backdrop-filter: blur(2px);
 }
 
 .parallax {
@@ -11,7 +13,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 500px;
   padding: 25px;
 
   background-repeat: no-repeat;
@@ -20,6 +21,8 @@
   background-attachment: fixed;
 
   .parallaxText {
+    margin-bottom: 20px;
+
     font-size: 2rem;
     text-align: center;
     color: white;
@@ -43,6 +46,8 @@
 }
 
 .parallaxJS {
+  height: 500px;
+
   background-image: url('../../assets/images/alphabet-letter-js-j-s-logo.jpg');
   background-position: center -200px;
 }

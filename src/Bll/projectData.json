@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Fancy Weather",
+    "taskUrl": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/fancy-weather.md",
+    "hostingUrl": "https://unruffled-gates-6f38e2.netlify.com/",
+    "features": ["JavaScript", "SCSS", "Webpack"],
+    "shortDescription": "What's the weather today? And tomorrow? You don't need to ask this questions again, annoying you relatives. Just open this app.",
+    "sourceUrl": "https://github.com/ineg22/ineg22-RS2019Q3/tree/master/fancy-weather"
+  },
+  {
+    "name": "Simple Piskel Clone",
+    "taskUrl": "https://github.com/rolling-scopes-school/tasks/blob/2018-Q3/tasks/piskel-clone.md",
+    "hostingUrl": "https://adoring-jennings-99b6bc.netlify.com/sprite.html",
+    "features": ["JavaScript", "SCSS", "Webpack", "HTML"],
+    "shortDescription": "Piskel is a free online editor for animated sprites & pixel art. I cloned not only the site itself but also its description",
+    "sourceUrl": "https://github.com/ineg22/ineg22-RS2019Q3/tree/master/simple-piskel-clone"
+  },
+  {
+    "name": "Songbird Quiz",
+    "taskUrl": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/songbird.md",
+    "hostingUrl": "https://pensive-bardeen-a2c5a3.netlify.com/",
+    "features": ["React", "SCSS", "Webpack"],
+    "shortDescription": "Feel like a adept of music of various genres and guess the melody",
+    "sourceUrl": "https://github.com/ineg22/songbird"
+  },
+  {
+    "name": "Cultural Portal",
+    "taskUrl": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-culture-portal.md",
+    "hostingUrl": "https://culture-portal-gatsby.netlify.com/data/person/avlasenko",
+    "features": [
+      "Gatsby",
+      "React",
+      "TypeScript",
+      "GraphQL",
+      "JavaScript",
+      "SCSS"
+    ],
+    "shortDescription": "Group work dedicated to poets of Belarus",
+    "sourceUrl": "https://github.com/muratx10/culture-portal"
+  },
+  {
+    "name": "Repair Design",
+    "taskUrl": "https://www.figma.com/file/DDxgDzBj1ojhVXndCqvB5D/IC-Repair-Design-Project-Copy",
+    "hostingUrl": "https://happy-keller-42dda3.netlify.com/",
+    "features": ["HTML", "SCSS", "Figma"],
+    "shortDescription": "Repair Design is a responsive landing page made for pseudo company from Rostov-on-Don.",
+    "sourceUrl": "https://github.com/ineg22/repair-design-project"
+  },
+  {
+    "name": "Virtual Keyboard",
+    "taskUrl": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-virtual-keyboard.md",
+    "hostingUrl": "https://elegant-lovelace-b62c28.netlify.com/",
+    "features": ["SCSS", "JavaScript"],
+    "shortDescription": "Simple virtual keyboard allows you to write everything you want. If you get tired, just relax, typing with your mouse. Supports two languages.",
+    "sourceUrl": "https://github.com/ineg22/codejam-virtual-keyboard"
+  }
+]
