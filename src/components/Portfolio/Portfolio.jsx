@@ -10,7 +10,6 @@ const Portfolio = () => {
   ));
   return (
     <>
-      <div className="gapInner"></div>
       <div className="parallax parallaxJS">
         <div className="mask">
           <div className="parallaxText">
