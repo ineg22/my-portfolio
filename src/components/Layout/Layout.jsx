@@ -1,8 +1,6 @@
 import React from 'react';
 import { Switch, Route, NavLink } from 'react-router-dom';
-import { TiSocialSkypeOutline } from 'react-icons/ti';
-import { FaTelegram, FaGithub, FaLinkedin } from 'react-icons/fa';
-import { GiMailbox } from 'react-icons/gi';
+import Contacts from '../Contacts/Contacts';
 
 import './Layout.scss';
 
@@ -40,29 +38,7 @@ const Layout = () => (
     </main>
     <footer className="footer">
       © Evgeny Ivanov 2020 &nbsp;|<span>&nbsp; Contact me: &nbsp;</span>
-      <a href="mailto:ineg22@gmail.com" target="_blank" className="footerLink">
-        <GiMailbox color="white" />
-      </a>
-      <a href="https://t.me/ineg_xd" target="_blank" className="footerLink">
-        <FaTelegram color="white" />
-      </a>
-      <a href="skype:ineg_xd" target="_blank" className="footerLink">
-        <TiSocialSkypeOutline color="white" />
-      </a>
-      <a
-        href="https://github.com/ineg22"
-        target="_blank"
-        className="footerLink"
-      >
-        <FaGithub color="white" />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/ineg22/"
-        target="_blank"
-        className="footerLink"
-      >
-        <FaLinkedin color="white" />
-      </a>
+      <Contacts color="white" />
     </footer>
   </div>
 );
