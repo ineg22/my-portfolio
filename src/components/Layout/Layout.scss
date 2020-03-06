@@ -20,7 +20,7 @@
     width: 100%;
     height: 20px;
 
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
   }
 
   .nav {
@@ -73,5 +73,11 @@
 
   .footerLink {
     margin: 0 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer > span {
+    display: none;
   }
 }

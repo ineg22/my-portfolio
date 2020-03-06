@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, Link, NavLink } from 'react-router-dom';
+import { Switch, Route, NavLink } from 'react-router-dom';
 import { TiSocialSkypeOutline } from 'react-icons/ti';
 import { FaTelegram, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { GiMailbox } from 'react-icons/gi';
@@ -39,7 +39,7 @@ const Layout = () => (
       </Switch>
     </main>
     <footer className="footer">
-      © Evgeny Ivanov 2020 | Contact me: &nbsp;
+      © Evgeny Ivanov 2020 &nbsp;|<span>&nbsp; Contact me: &nbsp;</span>
       <a href="mailto:ineg22@gmail.com" target="_blank" className="footerLink">
         <GiMailbox color="white" />
       </a>

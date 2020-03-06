@@ -12,8 +12,12 @@ const Portfolio = () => {
     <>
       <div className="gapInner"></div>
       <div className="parallax parallaxJS">
-        <p className="parallaxText">Evgeny Ivanov</p>
-        <p className="parallaxText">Junior Frontend Developer</p>
+        <div className="mask">
+          <div className="parallaxText">
+            <p>Evgeny Ivanov</p>
+            <p>Junior Frontend Developer</p>
+          </div>
+        </div>
       </div>
       <div className="gap">
         <div className="gapInner"></div>
