@@ -71,13 +71,32 @@
 
   background-color: rgb(26, 25, 25);
 
-  .footerLink {
+  a {
     margin: 0 10px;
+    color: white;
+
+    &:hover {
+      color: #4d90fe;
+    }
   }
 }
 
 @media (max-width: 500px) {
-  .footer > span {
-    display: none;
+  .footer {
+    font-size: 1rem;
+
+    a {
+      margin: 0 5px;
+    }
+
+    & > span {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .footer {
+    font-size: 0.8rem;
   }
 }

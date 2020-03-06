@@ -3,26 +3,22 @@ import { TiSocialSkypeOutline } from 'react-icons/ti';
 import { FaTelegram, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { GiMailbox } from 'react-icons/gi';
 
-const Contacts = ({ color }) => (
+const Contacts = () => (
   <>
-    <a href="mailto:ineg22@gmail.com" target="_blank" className="footerLink">
-      <GiMailbox color={color} />
+    <a href="mailto:ineg22@gmail.com" target="_blank">
+      <GiMailbox />
     </a>
-    <a href="https://t.me/ineg_xd" target="_blank" className="footerLink">
-      <FaTelegram color={color} />
+    <a href="https://t.me/ineg_xd" target="_blank">
+      <FaTelegram />
     </a>
-    <a href="skype:ineg_xd" target="_blank" className="footerLink">
-      <TiSocialSkypeOutline color={color} />
+    <a href="skype:ineg_xd" target="_blank">
+      <TiSocialSkypeOutline />
     </a>
-    <a href="https://github.com/ineg22" target="_blank" className="footerLink">
-      <FaGithub color={color} />
+    <a href="https://github.com/ineg22" target="_blank">
+      <FaGithub />
     </a>
-    <a
-      href="https://www.linkedin.com/in/ineg22/"
-      target="_blank"
-      className="footerLink"
-    >
-      <FaLinkedin color={color} />
+    <a href="https://www.linkedin.com/in/ineg22/" target="_blank">
+      <FaLinkedin />
     </a>
   </>
 );
