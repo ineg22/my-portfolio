@@ -5,6 +5,7 @@ import quiz from '../../../assets/images/quiz.PNG';
 import repair from '../../../assets/images/repair.PNG';
 import cultural from '../../../assets/images/cultural.PNG';
 import keyboard from '../../../assets/images/keyboard.PNG';
+import datagrid from '../../../assets/images/datagrid.png';
 
 const ProjectImage = ({ type }) => {
   console.log(type);
@@ -21,6 +22,8 @@ const ProjectImage = ({ type }) => {
       return <img src={repair} alt={type} />;
     case 'Virtual Keyboard':
       return <img src={keyboard} alt={type} />;
+    case 'Datagrid':
+      return <img src={datagrid} alt={type} />;
     default:
       return <img src={fancyWeather} alt={type} />;
   }

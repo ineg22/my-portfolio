@@ -1,11 +1,11 @@
 [
   {
-    "name": "Fancy Weather",
-    "taskUrl": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/fancy-weather.md",
-    "hostingUrl": "https://unruffled-gates-6f38e2.netlify.com/",
-    "features": ["JavaScript", "SCSS", "Webpack"],
-    "shortDescription": "What's the weather today? And tomorrow? You don't need to ask this questions again, annoying you relatives. Just open this app.",
-    "sourceUrl": "https://github.com/ineg22/ineg22-RS2019Q3/tree/master/fancy-weather"
+    "name": "Datagrid",
+    "taskUrl": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/datagrid.md",
+    "hostingUrl": "https://hopeful-kirch-b901c7.netlify.com/",
+    "features": ["JavaScript", "TypeScript", "React", "Redux"],
+    "shortDescription": "BIG table with the possibility of multi-level sorting of different types of data, virtualization, asynchrony, processing of query strings and the presence of several types of data filtering. ",
+    "sourceUrl": "https://github.com/ineg22/datagrid/pull/1"
   },
   {
     "name": "Simple Piskel Clone",
@@ -14,6 +14,14 @@
     "features": ["JavaScript", "SCSS", "Webpack", "HTML"],
     "shortDescription": "Piskel is a free online editor for animated sprites & pixel art. I cloned not only the site itself but also its description",
     "sourceUrl": "https://github.com/ineg22/ineg22-RS2019Q3/tree/master/simple-piskel-clone"
+  },
+  {
+    "name": "Fancy Weather",
+    "taskUrl": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/fancy-weather.md",
+    "hostingUrl": "https://unruffled-gates-6f38e2.netlify.com/",
+    "features": ["JavaScript", "SCSS", "Webpack"],
+    "shortDescription": "What's the weather today? And tomorrow? You don't need to ask this questions again, annoying you relatives. Just open this app.",
+    "sourceUrl": "https://github.com/ineg22/ineg22-RS2019Q3/tree/master/fancy-weather"
   },
   {
     "name": "Songbird Quiz",

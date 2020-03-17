@@ -1,6 +1,7 @@
 import React from 'react';
 import { WiDayFog } from 'react-icons/wi';
 import { DiCode } from 'react-icons/di';
+import { GiComputing } from 'react-icons/gi';
 import {
   GiTerror,
   GiEmptyChessboard,
@@ -23,6 +24,8 @@ const ProjectIcon = ({ type, children }) => {
       return <DiCode className="icon">{children}</DiCode>;
     case 'Virtual Keyboard':
       return <GiKeyboard className="icon">{children}</GiKeyboard>;
+    case 'Datagrid':
+      return <GiComputing className="icon">{children}</GiComputing>;
     default:
       return <GiTerror className="icon">{children}</GiTerror>;
   }
